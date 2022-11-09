@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-cst-size {
+    width: 50%;
+    margin: 0 auto;
+}
