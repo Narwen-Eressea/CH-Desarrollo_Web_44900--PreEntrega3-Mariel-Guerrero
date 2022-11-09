@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.gradient-bottom {
+    background: linear-gradient(#3c7b96, #f69d3c);
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+#navbar-cstm {
+    z-index: 12;
+    font-family: 'Russo One', sans-serif;
+}
+
+.logo-cstm:hover{
+    transform: scale(1.5);
+    transition: all 2s;
+}
+
+.footer {
+    padding-top: 5%;
+}
+
+.title1-cstm {
+    z-index: 1;
+    color: rgb(216, 195, 148);
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 300%;
+    font-weight: bold;
+    animation: cambioColor 10s;
+}
+
+@keyframes cambioColor {
+    0%{
+        color: rgb(216, 195, 148);
+    }
+    15%{
+        color: rgb(240, 152, 81);
+    }
+    25%{
+        color: rgb(238, 73, 23);
+    }
+    50%{
+        color: rgb(243, 57, 0);
+    }
+    75%{
+        color: rgb(238, 73, 23)
+    }
+    85%{
+        color: rgb(240, 152, 81);
+    }
+    100%{
+        color: rgb(216, 195, 148);
+    }
+
+}
+
+.title2-cstm {
+    color: rgb(238, 154, 123);
+    font-size: 150%;
+    font-style: italic;
+    text-align: center;
+    text-decoration: overline;
+    padding-bottom: 20px;
+}
+
+.title2-cstm:hover {
+    transform: translateY(20px) scale(1.5);
+    transition: all 4s;
+}
+
+.opinions {
+    padding-top: 5%;
+}
+
+.opinion {
+    background: radial-gradient(#e9e8a7, #e2b36c);
+    text-align: center;
+    padding: 30px;
+    border: 5px ridge rgb(209, 94, 48);
+}
+
+.opinion:hover {
+    transform: scale(1.2);
+    transition: all 5s;
+}
+
+.art-cstm:hover {
+    transform: translateX(50%);
+    transition: all 3s;
+}
