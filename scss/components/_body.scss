@@ -1,0 +1,20 @@
+/* Body */
+
+body {
+    background: linear-gradient(nth($colores, 1), nth($colores, 4));
+
+    h1 {
+        padding-top: 10%;
+        @include fonts($font-family1, 300%, nth($colores, 3));
+    }
+
+    h3 {
+        padding-bottom: 3%;
+        text-decoration: overline;
+        @include fonts($font-family2, 150%, nth($colores, 5));
+    }
+
+    .container-cstm {
+        margin-top: 3%;
+    }
+}

@@ -1,0 +1,61 @@
+/* SASS */
+
+/* Import */
+@import './base/estilosGenerales';
+@import './base/extends';
+@import './base/listas';
+@import './base/mixins';
+@import './base/variables';
+@import './components/header';
+@import './components/body';
+@import './components/footer';
+
+/*ABOUT*/
+
+.row-cstm {
+    padding: 2%;
+
+    .p_bio {
+        padding: 10%;
+        text-align: center;
+        color: white;
+    }
+
+    .biopic {
+        filter: brightness(70%);
+
+        &:hover {
+            filter: none;
+        }
+    }
+}
+
+/* WRITINGS */
+
+#main_writings {
+    margin-bottom: 3%;
+
+    .accordion-item-cstm {
+        color: nth($colores, 2);
+        background: radial-gradient(nth($colores, 3), nth($colores, 4));
+
+        .accordion-button-cstm {
+            background-color: nth($colores, 5);
+            color: white;
+        }
+    }
+}
+
+/* CONTACT */
+#main_contact {
+    margin-bottom: 3%;
+
+    .contacto {
+        margin-bottom: 10px;
+
+        .contacto-label {
+            color: nth($colores, 3);
+            font-size: larger;
+        }
+    }
+}

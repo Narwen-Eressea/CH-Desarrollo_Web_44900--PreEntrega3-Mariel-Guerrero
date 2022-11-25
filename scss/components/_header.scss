@@ -1,0 +1,18 @@
+/* Header */
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+
+    #navbar-cstm {
+        font-family: 'Russo One', sans-serif;
+        background-color: nth($colores, 1);
+
+        .logo-cstm:hover {
+            transform: scale(1.5);
+            transition: all 2s;
+        }
+    }
+}

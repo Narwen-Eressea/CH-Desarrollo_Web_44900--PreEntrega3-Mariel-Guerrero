@@ -1,0 +1,23 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Narwen-Eressea/PreEntrega2-Mariel-Guerrero.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Narwen-Eressea/PreEntrega2-Mariel-Guerrero/issues"
+  },
+  "homepage": "https://github.com/Narwen-Eressea/PreEntrega2-Mariel-Guerrero#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
