@@ -2,12 +2,12 @@
 
 .footer {
     padding: 1%;
-    margin: 1%;
     width: 100%;
     background-color: nth($colores, 1);
 
     p {
         color: wheat;
+        text-align: center;
 
         a {
             text-decoration: none;

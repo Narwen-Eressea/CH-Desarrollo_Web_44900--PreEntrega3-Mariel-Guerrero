@@ -6,7 +6,14 @@
   padding: 0;
 }
 
-/* Extends */ /* Listas */
+/* Extends */
+.container-art, .row-cstm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Listas */
 /* Paletas de Colores */
 /* Mixins */ /* Variables */
 /* Fuentes */
@@ -50,12 +57,12 @@ body .container-cstm {
 /* Footer */
 .footer {
   padding: 1%;
-  margin: 1%;
   width: 100%;
   background-color: #264d59;
 }
 .footer p {
   color: wheat;
+  text-align: center;
 }
 .footer p a {
   text-decoration: none;
@@ -64,6 +71,41 @@ body .container-cstm {
 .footer p a:hover {
   color: #f9ad6a;
   text-decoration: underline;
+}
+
+/* INDEX */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 383px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card .flip-card-inner .flip-card-front,
+.flip-card .flip-card-inner .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card .flip-card-inner .flip-card-front img {
+  width: 100%;
+}
+.flip-card .flip-card-inner .flip-card-back {
+  background-color: #43978d;
+  color: white;
+  transform: rotateY(180deg);
 }
 
 /*ABOUT*/
@@ -82,6 +124,30 @@ body .container-cstm {
   filter: none;
 }
 
+/* ART */
+.container-art {
+  margin: 150px;
+  max-width: 600px;
+  max-height: 350px;
+  flex-direction: row;
+}
+.container-art:hover img {
+  opacity: 0.3;
+}
+.container-art img {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: center;
+  transform: perspective(800px) rotateY(25deg);
+  transition: 0.5s;
+}
+.container-art img:hover {
+  transform: perspective(800px) rotateY(0deg) scale(150%);
+  opacity: 1;
+  z-index: 2;
+}
+
 /* WRITINGS */
 #main_writings {
   margin-bottom: 3%;
@@ -94,7 +160,6 @@ body .container-cstm {
   background-color: #d46c4e;
   color: white;
 }
-
 /* CONTACT */
 #main_contact {
   margin-bottom: 3%;
@@ -105,6 +170,14 @@ body .container-cstm {
 #main_contact .contacto .contacto-label {
   color: #f9e07f;
   font-size: larger;
+}
+#main_contact .btn-cstm {
+  color: #264d59;
+  border: solid #264d59;
+}
+#main_contact .btn-cstm:hover {
+  background-color: #264d59;
+  color: wheat;
 }
 
 /*# sourceMappingURL=style.css.map */
