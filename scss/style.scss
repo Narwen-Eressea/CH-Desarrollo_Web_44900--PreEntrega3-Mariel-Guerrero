@@ -12,85 +12,110 @@
 
 /* INDEX */
 
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 383px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px;
+@media screen and (max-width: 767px) {
 
-    &:hover .flip-card-inner {
-        transform: rotateY(180deg);
+    .h-mobile {
+        display: inline-grid;
+        grid-column: 2;
+
     }
+}
 
-    .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
+.row-cstm {
+    @extend %flex;
 
-        .flip-card-front,
-        .flip-card-back {
-            position: absolute;
+    .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 383px;
+        border: 1px hidden none;
+        perspective: 1000px;
+
+        &:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-inner {
+            position: relative;
             width: 100%;
             height: 100%;
-            backface-visibility: hidden;
-        }
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
 
-        .flip-card-front img {
-            width: 100%;
-        }
+            .flip-card-front,
+            .flip-card-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+            }
 
-        .flip-card-back {
-            background-color: nth($colores, 2);
-            color: white;
-            transform: rotateY(180deg);
+            .flip-card-front img {
+                width: 100%;
+            }
+
+            .flip-card-back {
+                background-color: nth($colores, 2);
+                color: white;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                transform: rotateY(180deg);
+
+                .quote-cstm {
+                    color: nth($colores, 3);
+                }
+            }
         }
     }
 }
 
 /*ABOUT*/
 
-.row-cstm {
-    padding: 2%;
-    @extend %flex;
-
-    .p_bio {
-        padding: 10%;
-        text-align: center;
-        color: white;
+#main_about {
+    .row-reverse {
+        display: flex;
+        flex-direction: row-reverse;
     }
 
-    .biopic {
-        filter: brightness(70%);
+    .row-cstm {
+        padding: 2%;
+        @extend %flex;
 
-        &:hover {
-            filter: none;
+        .p_bio {
+            padding: 10%;
+            text-align: center;
+            color: white;
+        }
+
+        .biopic {
+            filter: brightness(70%);
+
+            &:hover {
+                filter: none;
+            }
         }
     }
 }
 
+
 /* ART */
 
 .container-art {
-    margin: 150px;
-    max-width: 600px;
-    max-height: 350px;
-    @extend %flex;
-    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
     &:hover img {
         opacity: 0.3;
     }
 
     img {
-        width: 30%;
-        height: 100%;
-        object-fit: cover;
+        width: 175px;
 
-        transform-origin: center;
         transform: perspective(800px) rotateY(25deg);
         transition: 0.5s;
 
@@ -98,6 +123,24 @@
             transform: perspective(800px) rotateY(0deg) scale(150%);
             opacity: 1;
             z-index: 2;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .container-art {
+        flex-direction: column;
+        margin: 0;
+        margin-left: 22%;
+
+        &:hover img {
+            opacity: 1;
+        }
+
+        img {
+            width: 200;
+            margin-top: 100px;
+
         }
     }
 }
@@ -116,7 +159,9 @@
             color: white;
         }
 
-        .p-writings {}
+        .accordion-body-cstm {
+            line-height: 1.8;
+        }
     }
 }
 

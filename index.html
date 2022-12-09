@@ -25,7 +25,7 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar-cstm">
-      <div class="container">
+      <div class="container container-cstm">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo3"
           aria-controls="navbarTogglerDemo3" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -59,17 +59,18 @@
 
   <main class="container container-cstm" id="main_index">
     <section class="text-center">
-      <h1 class="animate__animated animate__zoomIn">El Universo de Alex Grey</h1>
-      <h3 class="animate__animated animate__fadeInBottomRight">Primer sitio en español del artista visionario</h3>
+      <h1 class="animate__animated animate__zoomIn">El Universo de <span class="h-mobile">Alex Grey</span> </h1>
+      <h3 class="animate__animated animate__fadeInBottomRight">Primer sitio en español <span class="h-mobile">del
+          artista visionario</span></h3>
     </section>
-    <section class="text-center">
+    <section class="text-center ">
       <video width="100%" height="500px" controls autoplay loop src="./media/Monochord - Alex Grey (Video).mp4"
         type="video/mp4" allowfullscreen></video>
     </section>
   </main>
 
   <section class="container container-cstm">
-    <article class="row">
+    <article class="row row-cstm">
 
       <div class="col-md-4 col-12 flip-card">
         <div class="flip-card-inner">
@@ -81,7 +82,7 @@
               scientists--full of molecules, bodies and stars--and the intangible visionary inner worlds-- full of
               light,
               shadow and spiritual beings--known mainly to mystics.</p>
-            <p class="blockquote-footer">Albert Hofmann, descubridor del LSD</p>
+            <p class="blockquote-footer quote-cstm">Albert Hofmann, descubridor del LSD</p>
           </div>
         </div>
       </div>
@@ -95,7 +96,7 @@
             <p class="blockquote">...It is only Grey's inquisitiveness, his desire to understand the cosmic
               metastructure
               of humanity, that drives him to such a rigorously detailed account of the typically unseen.</p>
-            <p class="blockquote-footer">Revista Artforum</p>
+            <p class="blockquote-footer quote-cstm">Revista Artforum</p>
           </div>
         </div>
       </div>
@@ -106,10 +107,11 @@
             <img src="./media/A03IMG_3072.jpg" alt="">
           </div>
           <div class="flip-card-back">
-            <p class="blockquote">Alex Grey's paintings breathe new life into the deadened soul of modern consciousness.
+            <p class="blockquote">Alex Grey's paintings breathe new life into the deadened soul of modern
+              consciousness.
               You will find in this work the intensity of someone who is not just doing his own personal art but is
               consciously participating in the evolutionary unfolding toward a more integral world.</p>
-            <p class="blockquote-footer">Suzi Gablik, autora de <cite title="source-title">¿Ha muerto el arte
+            <p class="blockquote-footer quote-cstm">Suzi Gablik, autora de <cite title="source-title">¿Ha muerto el arte
                 moderno?</cite></p>
           </div>
         </div>
@@ -121,6 +123,8 @@
     <p>Copyright © 2022 <a href="https://www.alexgrey.com/" target="_blank">Alex Grey</a> (Página Oficial)</p>
     <p><a href="#main_index">Volver arriba</a></p>
   </footer>
+
+
 
   <!-- Scripts de JS de Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
